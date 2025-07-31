@@ -7,3 +7,5 @@ MONC relies on different modules like buoyancy, viscosity, diffusivity and other
 A version of CASIM parallelized with OpenACC is already available: https://code.metoffice.gov.uk/trac/monc/browser/casim/branches/dev/weizhang/um13.6_copy/src?rev=11536
 
 This project aims to provide a new insight of the use of OpenACC programming standard for parallel computing following the previous work of Brown et al 2020 (https://arxiv.org/pdf/2009.12850).
+
+Source: https://code.metoffice.gov.uk/trac/monc/browser/main/branches/dev/lambertdelbeke/del_new_monc?rev=12051
