@@ -14,6 +14,7 @@ Development:
 - build of librairies (zlib, curl, libxml2, pnetcdf, netcdf-C, netcdf-Fortran)\
   Issues encountered with the use of nv# compilers:\
   Trouble to build libxml2, contact with NVIDIA support: https://forums.developer.nvidia.com/t/libxml2-manual-installation/360152/3
+
 \
 Build librairies:
 First after installing the SDK v13 package from NVIDIA please load the following module: module load cuda/sdk_13/modulefiles/nvhpc-hpcx-cuda13/25.11 \
