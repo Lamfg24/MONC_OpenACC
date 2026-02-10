@@ -80,4 +80,15 @@ PATH="$PATH:/usr/local/Modules/modulefiles/cuda/sdk_13/Linux_x86_64/25.11/comm_l
 
 sudo make install 
 
+#################################
+
+NETCDF-C
+
+Download v at https://downloads.unidata.ucar.edu/netcdf/
+Then: \
+CC=mpicc CXX=mpicxx CFLAGS="-fPIC" CXXFLAGS="-fPIC" CPPFLAGS='-I/usr/local/Modules/modulefiles/cuda/sdk_13/Linux_x86_64/25.11/comm_libs/13.0/hpcx/hpcx-2.25.1/ompi/include -I/usr/local/Modules/modulefiles/curl/8.9.0_nvidia/include -I/usr/local/Modules/modulefiles/libxml2/2.16.0_nvidia/include -I/usr/local/Modules/modulefiles/hdf5/1.10.3_nvidia/include -I/usr/local/Modules/modulefiles/zlib/1.2.12_nvidia/include' LDFLAGS='-L/usr/local/Modules/modulefiles/cuda/sdk_13/Linux_x86_64/25.11/comm_libs/13.0/hpcx/hpcx-2.25.1/ompi/lib -L/usr/local/Modules/modulefiles/curl/8.9.0_nvidia/lib -L/usr/local/Modules/modulefiles/libxml2/2.16.0_nvidia/lib -L/usr/local/Modules/modulefiles/hdf5/1.10.3_nvidia/lib -L/usr/local/Modules/modulefiles/zlib/1.2.12_nvidia/lib ./configure --prefix=/usr/local/Modules/modulefiles/netcdf-c/4.9.2_nvidia --enable-parallel
+
+make -j 4 \
+sudo make install
+
 
