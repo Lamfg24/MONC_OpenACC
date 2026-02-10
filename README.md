@@ -16,12 +16,12 @@ Development:
   Trouble to build libxml2, contact with NVIDIA support: https://forums.developer.nvidia.com/t/libxml2-manual-installation/360152/3
 
 \
-Build librairies:
+Build librairies: \
 First after installing the SDK v13 package from NVIDIA please load the following module: module load cuda/sdk_13/modulefiles/nvhpc-hpcx-cuda13/25.11 \
 
 ################################# 
 
-ZLIB\
+ZLIB
 
 Download v1.2.12 at https://www.zlib.net/fossils/
 
@@ -32,7 +32,7 @@ sudo make install
 
 ################################# 
 
-CURL \
+CURL
 
 Download v8.9.0 at https://curl.se/download/ \
 Then:
