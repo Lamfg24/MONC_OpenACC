@@ -14,6 +14,7 @@ Development:
 - build of librairies (zlib, curl, libxml2, pnetcdf, netcdf-C, netcdf-Fortran)\
   Issues encountered with the use of nv# compilers:\
   Trouble to build libxml2, contact with NVIDIA support: https://forums.developer.nvidia.com/t/libxml2-manual-installation/360152/3 \
+  Trouble with zlib symbols which troubles the HDF5 installation, contact with NVIDIA support: https://forums.developer.nvidia.com/t/zlib-manual-installation-conflict/360230 \
   Currently dealing with NVIDIA to fix librairies installation!
 
 \
