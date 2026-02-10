@@ -13,7 +13,8 @@ Source: https://code.metoffice.gov.uk/trac/monc/browser/main/branches/dev/lamber
 Development:
 - build of librairies (zlib, curl, libxml2, pnetcdf, netcdf-C, netcdf-Fortran)\
   Issues encountered with the use of nv# compilers:\
-  Trouble to build libxml2, contact with NVIDIA support: https://forums.developer.nvidia.com/t/libxml2-manual-installation/360152/3
+  Trouble to build libxml2, contact with NVIDIA support: https://forums.developer.nvidia.com/t/libxml2-manual-installation/360152/3 \
+  Currently dealing with NVIDIA to fix librairies installation!
 
 \
 Build librairies: \
