@@ -25,7 +25,7 @@ ZLIB
 
 Download v1.2.12 at https://www.zlib.net/fossils/
 
-Then:
+Then:\
 CFLAGS="-fpic" ./configure --prefix=/usr/local/Modules/modulefiles/zlib/1.2.12_nvidia \
 make -j 4 \
 sudo make install 
@@ -35,7 +35,7 @@ sudo make install
 CURL
 
 Download v8.9.0 at https://curl.se/download/ \
-Then:
+Then:\
 ./configure --prefix=/usr/local/Modules/modulefiles/curl/8.9.0_nvidia --without-ssl --enable-shared=yes --enable-static=yes \
 make -j 4 \
 sudo make install 
