@@ -8,3 +8,9 @@ A version of CASIM parallelized with OpenACC is already available: https://code.
 This project aims to provide a new insight of the use of OpenACC programming standard for parallel computing following the previous work of Brown et al 2020 (https://arxiv.org/pdf/2009.12850). \
 \
 Source: https://code.metoffice.gov.uk/trac/monc/browser/main/branches/dev/lambertdelbeke/del_new_monc?rev=12051
+\
+\
+Development:\
+- build of librairies (zlib, curl, libxml2, pnetcdf, netcdf-C, netcdf-Fortran)
+  Issues encountered with the use of nv# compilers:\
+  Trouble to build libxml2, contact with NVIDIA support: https://forums.developer.nvidia.com/t/libxml2-manual-installation/360152/3
