@@ -15,11 +15,10 @@ Development:
   Issues encountered with the use of nv# compilers:\
   Trouble to build libxml2, contact with NVIDIA support: https://forums.developer.nvidia.com/t/libxml2-manual-installation/360152/3
 \
-\
 Build librairies:
 First after installing the SDK v13 package from NVIDIA please load the following module: module load cuda/sdk_13/modulefiles/nvhpc-hpcx-cuda13/25.11 \
 
-################################# \
+################################# 
 
 ZLIB\
 
@@ -28,9 +27,9 @@ Download v1.2.12 at https://www.zlib.net/fossils/
 Then:
 CFLAGS="-fpic" ./configure --prefix=/usr/local/Modules/modulefiles/zlib/1.2.12_nvidia \
 make -j 4 \
-sudo make install \
+sudo make install 
 
-################################# \
+################################# 
 
 CURL \
 
@@ -38,6 +37,6 @@ Download v8.9.0 at https://curl.se/download/ \
 Then:
 ./configure --prefix=/usr/local/Modules/modulefiles/curl/8.9.0_nvidia --without-ssl --enable-shared=yes --enable-static=yes \
 make -j 4 \
-sudo make install \
+sudo make install 
 
 #################################
