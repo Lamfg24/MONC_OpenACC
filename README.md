@@ -70,14 +70,14 @@ HDF5
 
 Download v1.10.3 at https://support.hdfgroup.org/downloads/ \
 Then: \
-CC=mpicc FC=mpif90 CFLAGS="-fPIC" CXXFLAGS="-fPIC" FCFLAGS="-fPIC" ./configure --with-zlib=/usr/local/Modules/modulefiles/zlib/1.2.12_nvidia prefix=/usr/local/Modules/modulefiles/hdf5/1.10.3_nvidia --enable-parallel --enable-fortran \
+CC=mpicc FC=mpif90 CFLAGS="-fPIC" CXXFLAGS="-fPIC" FCFLAGS="-fPIC" ./configure --with-zlib=/usr/local/Modules/modulefiles/zlib/1.2.12_nvidia prefix=/usr/local/Modules/modulefiles/hdf5/1.10.3_nvidia --enable-parallel --enable-fortran 
 
-make -j 4 \
+make -j 4 
 
 Go to hdf5-1.10.3 folder and open libtool \
 Go to line 316, then pass a line and insert line: \
-PATH="$PATH:/usr/local/Modules/modulefiles/cuda/sdk_13/Linux_x86_64/25.11/comm_libs/13.0/hpcx/hpcx-2.25.1/ompi/bin:/usr/local/Modules/modulefiles/cuda/sdk_13/Linux_x86_64/25.11/comm_libs/13.0/hpcx/hpcx-2.25.1/clusterkit/bin:/usr/local/Modules/modulefiles/cuda/sdk_13/Linux_x86_64/25.11/comm_libs/13.0/hpcx/hpcx-2.25.1/ompi/tests/imb:/usr/local/Modules/modulefiles/cuda/sdk_13/Linux_x86_64/25.11/comm_libs/13.0/hpcx/hpcx-2.25.1/sharp/bin:/usr/local/Modules/modulefiles/cuda/sdk_13/Linux_x86_64/25.11/comm_libs/13.0/hpcx/hpcx-2.25.1/hcoll/bin:/usr/local/Modules/modulefiles/cuda/sdk_13/Linux_x86_64/25.11/comm_libs/13.0/hpcx/hpcx-2.25.1/ucc/bin:/usr/local/Modules/modulefiles/cuda/sdk_13/Linux_x86_64/25.11/comm_libs/13.0/hpcx/hpcx-2.25.1/ucx/bin:/usr/local/Modules/modulefiles/cuda/sdk_13/Linux_x86_64/25.11/compilers/extras/qd/bin:/usr/local/Modules/modulefiles/cuda/sdk_13/Linux_x86_64/25.11/compilers/bin:/usr/local/Modules/modulefiles/cuda/sdk_13/Linux_x86_64/25.11/cuda/13.0/bin:/usr/local/Modules/modulefiles/zlib/1.2.12_nvidia" \
+PATH="$PATH:/usr/local/Modules/modulefiles/cuda/sdk_13/Linux_x86_64/25.11/comm_libs/13.0/hpcx/hpcx-2.25.1/ompi/bin:/usr/local/Modules/modulefiles/cuda/sdk_13/Linux_x86_64/25.11/comm_libs/13.0/hpcx/hpcx-2.25.1/clusterkit/bin:/usr/local/Modules/modulefiles/cuda/sdk_13/Linux_x86_64/25.11/comm_libs/13.0/hpcx/hpcx-2.25.1/ompi/tests/imb:/usr/local/Modules/modulefiles/cuda/sdk_13/Linux_x86_64/25.11/comm_libs/13.0/hpcx/hpcx-2.25.1/sharp/bin:/usr/local/Modules/modulefiles/cuda/sdk_13/Linux_x86_64/25.11/comm_libs/13.0/hpcx/hpcx-2.25.1/hcoll/bin:/usr/local/Modules/modulefiles/cuda/sdk_13/Linux_x86_64/25.11/comm_libs/13.0/hpcx/hpcx-2.25.1/ucc/bin:/usr/local/Modules/modulefiles/cuda/sdk_13/Linux_x86_64/25.11/comm_libs/13.0/hpcx/hpcx-2.25.1/ucx/bin:/usr/local/Modules/modulefiles/cuda/sdk_13/Linux_x86_64/25.11/compilers/extras/qd/bin:/usr/local/Modules/modulefiles/cuda/sdk_13/Linux_x86_64/25.11/compilers/bin:/usr/local/Modules/modulefiles/cuda/sdk_13/Linux_x86_64/25.11/cuda/13.0/bin:/usr/local/Modules/modulefiles/zlib/1.2.12_nvidia" 
 
-sudo make install \
+sudo make install 
 
 
