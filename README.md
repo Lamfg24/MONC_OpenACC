@@ -19,7 +19,7 @@ Development:
 
 \
 Build librairies: \
-First after installing the SDK v13 package from NVIDIA please load the following module: module load cuda/sdk_13/modulefiles/nvhpc-hpcx-cuda13/25.11 \
+First after installing the SDK package with CUDA v13 from NVIDIA please load the following module: module load cuda/sdk_13/modulefiles/nvhpc-hpcx-cuda13/25.11 \
 
 ################################# 
 
