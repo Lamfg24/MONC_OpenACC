@@ -46,17 +46,17 @@ LIBXML2
 
 Download v2.16.0 at https://gitlab.gnome.org/GNOME/libxml2/-/tree/master \
 Then:\
-In folder ./ open configure and at line:
-13859
-EXTRA_CFLAGS="${EXTRA_CFLAGS} -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Waggregate-return -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wredundant-decls"
-replace by
-EXTRA_CFLAGS="${EXTRA_CFLAGS} "
+In folder ./ open configure and at line: \
+13859 \
+EXTRA_CFLAGS="${EXTRA_CFLAGS} -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Waggregate-return -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wredundant-decls" \
+replace by \
+EXTRA_CFLAGS="${EXTRA_CFLAGS} " \
 
-13861
-EXTRA_CFLAGS="${EXTRA_CFLAGS} -Wno-long-long -Wno-format-extra-args"
-replace by
-EXTRA_CFLAGS="${EXTRA_CFLAGS} "
+13861 \
+EXTRA_CFLAGS="${EXTRA_CFLAGS} -Wno-long-long -Wno-format-extra-args" \
+replace by \
+EXTRA_CFLAGS="${EXTRA_CFLAGS} " \
 
-./configure --prefix=/usr/local/Modules/modulefiles/libxml2/2.16.0_nvidia
-make -j 4
-sudo make install
+./configure --prefix=/usr/local/Modules/modulefiles/libxml2/2.16.0_nvidia \
+make -j 4 \
+sudo make install \
