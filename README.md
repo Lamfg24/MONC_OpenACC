@@ -12,9 +12,9 @@ Source: https://code.metoffice.gov.uk/trac/monc/browser/main/branches/dev/lamber
 \
 Development:
 - build of librairies (zlib, curl, libxml2, pnetcdf, netcdf-C, netcdf-Fortran)\
-  - Issues encountered with the use of nv# compilers:\
-  - Trouble to build libxml2, contact with NVIDIA support: https://forums.developer.nvidia.com/t/libxml2-manual-installation/360152 \
-  - Trouble with zlib symbols which troubles the HDF5 installation, contact with NVIDIA support: https://forums.developer.nvidia.com/t/zlib-manual-installation-conflict/360230 \
+  - Issues encountered with the use of nv# compilers:
+  - Trouble to build libxml2, contact with NVIDIA support: https://forums.developer.nvidia.com/t/libxml2-manual-installation/360152 
+  - Trouble with zlib symbols which troubles the HDF5 installation, contact with NVIDIA support: https://forums.developer.nvidia.com/t/zlib-manual-installation-conflict/360230 
   - Trouble with NETCDF libraries, contact with NVIDIA support: https://forums.developer.nvidia.com/t/netcdf-fortran-manual-installation/360255 (solved by myself)
 
 
