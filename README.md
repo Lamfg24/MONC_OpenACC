@@ -16,8 +16,8 @@ Development:
   - Trouble to build libxml2, contact with NVIDIA support: https://forums.developer.nvidia.com/t/libxml2-manual-installation/360152 
   - Trouble with zlib symbols which troubles the HDF5 installation, contact with NVIDIA support: https://forums.developer.nvidia.com/t/zlib-manual-installation-conflict/360230 
   - Trouble with NETCDF libraries, contact with NVIDIA support: https://forums.developer.nvidia.com/t/netcdf-fortran-manual-installation/360255 (solved by myself)
-- compilation of MONC\
-  - 
+- compilation of MONC
+ 
 
 
 Build librairies: \
