@@ -108,18 +108,31 @@ Please open in pnetcdf_install/lib the file libpnetcdf.la \
 At line: \
 dependency_libs='  /libmpi_usempif08.la  /libmpi_usempi_ignore_tkr.la  /libmpi_mpifh.la -lnvf -lnsnvc  /libmpi.la -lrt -lutil -lz' \
 replacy by: \
-dependency_libs='  /usr/local/Modules/modulefiles/cuda/sdk_13/Linux_x86_64/25.11/comm_libs/13.0/hpcx/hpcx-2.25.1/ompi/lib/libmpi_usempif08.la  /usr/local/Modules/modulefiles/cuda/sdk_13/Linux_x86_64/25.11/comm_libs/13.0/hpcx/hpcx-2.25.1/ompi/lib/libmpi_usempi_ignore_tkr.la  /usr/local/Modules/modulefiles/cuda/sdk_13/Linux_x86_64/25.11/comm_libs/13.0/hpcx/hpcx-2.25.1/ompi/lib/libmpi_mpifh.la -lnvf -lnsnvc  /usr/local/Modules/modulefiles/cuda/sdk_13/Linux_x86_64/25.11/comm_libs/13.0/hpcx/hpcx-2.25.1/ompi/lib/libmpi.la -lrt -lutil -lz'
+dependency_libs='  /usr/local/Modules/modulefiles/cuda/sdk_13/Linux_x86_64/25.11/comm_libs/13.0/hpcx/hpcx-2.25.1/ompi/lib/libmpi_usempif08.la  /usr/local/Modules/modulefiles/cuda/sdk_13/Linux_x86_64/25.11/comm_libs/13.0/hpcx/hpcx-2.25.1/ompi/lib/libmpi_usempi_ignore_tkr.la  /usr/local/Modules/modulefiles/cuda/sdk_13/Linux_x86_64/25.11/comm_libs/13.0/hpcx/hpcx-2.25.1/ompi/lib/libmpi_mpifh.la -lnvf -lnsnvc  /usr/local/Modules/modulefiles/cuda/sdk_13/Linux_x86_64/25.11/comm_libs/13.0/hpcx/hpcx-2.25.1/ompi/lib/libmpi.la -lrt -lutil -lz' \
 This procedure is important to enable the installation of NETCDF-C using PNETCDF
 
 #################################
 
 NETCDF-C
 
-Download v4.9.2 at https://downloads.unidata.ucar.edu/netcdf/ \
+Download v4.9.2 at https://downloads.unidata.ucar.edu/netcdf/ 
+
 Then: \
+module load cuda/sdk_13/modulefiles/nvhpc-hpcx-cuda13/25.11
+module load curl/8.9.0_nvidia/curl-8.9.0_nvidia
+module load zlib/1.2.12_nvidia/zlib_1.2.12_nvidia
+module load libxml2/2.16.0_nvidia/libxml2_2.16.0_nvidia
+module load hdf5/1.10.3_nvidia/hdf5_1.10.3_nvidia
+
 CC=mpicc CXX=mpicxx CFLAGS="-fPIC" CXXFLAGS="-fPIC" CPPFLAGS='-I/usr/local/Modules/modulefiles/cuda/sdk_13/Linux_x86_64/25.11/comm_libs/13.0/hpcx/hpcx-2.25.1/ompi/include -I/usr/local/Modules/modulefiles/curl/8.9.0_nvidia/include -I/usr/local/Modules/modulefiles/libxml2/2.16.0_nvidia/include -I/usr/local/Modules/modulefiles/hdf5/1.10.3_nvidia/include -I/usr/local/Modules/modulefiles/zlib/1.2.12_nvidia/include' LDFLAGS='-L/usr/local/Modules/modulefiles/cuda/sdk_13/Linux_x86_64/25.11/comm_libs/13.0/hpcx/hpcx-2.25.1/ompi/lib -L/usr/local/Modules/modulefiles/curl/8.9.0_nvidia/lib -L/usr/local/Modules/modulefiles/libxml2/2.16.0_nvidia/lib -L/usr/local/Modules/modulefiles/hdf5/1.10.3_nvidia/lib -L/usr/local/Modules/modulefiles/zlib/1.2.12_nvidia/lib ./configure --prefix=/usr/local/Modules/modulefiles/netcdf-c/4.9.2_nvidia --enable-parallel
 
 make -j 4 \
 sudo make install
 
 
+Please open in netcdf-c_install/lib the file libnetcdf.la \
+At line: \
+dependency_libs=' -L/usr/local/Modules/modulefiles/cuda/sdk_13/Linux_x86_64/25.11/comm_libs/13.0/hpcx/hpcx-2.25.1/ompi/lib -L/usr/local/Modules/modulefiles/curl/8.9.0_nvidia/lib -L/usr/local/Modules/modulefiles/libxml2/2.16.0_nvidia/lib -L/usr/local/Modules/modulefiles/hdf5/1.10.3_nvidia/lib -L/usr/local/Modules/modulefiles/zlib/1.2.12_nvidia/lib -L/usr/local/Modules/modulefiles/pnetcdf/1.12.3_nvidia/lib /usr/local/Modules/modulefiles/pnetcdf/1.12.3_nvidia/lib/libpnetcdf.la  /libmpi_usempif08.la  /libmpi_usempi_ignore_tkr.la  /libmpi_mpifh.la -lnvf -lnsnvc  /libmpi.la -lrt -lutil /usr/local/Modules/modulefiles/hdf5/1.10.3_nvidia/lib/libhdf5_hl.la /usr/local/Modules/modulefiles/hdf5/1.10.3_nvidia/lib/libhdf5.la -ldl /usr/local/Modules/modulefiles/libxml2/2.16.0_nvidia/lib/libxml2.la -lm /usr/local/Modules/modulefiles/curl/8.9.0_nvidia/lib/libcurl.la -lz' \
+replace by: \
+dependency_libs=' -L/usr/local/Modules/modulefiles/cuda/sdk_13/Linux_x86_64/25.11/comm_libs/13.0/hpcx/hpcx-2.25.1/ompi/lib -L/usr/local/Modules/modulefiles/curl/8.9.0_nvidia/lib -L/usr/local/Modules/modulefiles/libxml2/2.16.0_nvidia/lib -L/usr/local/Modules/modulefiles/hdf5/1.10.3_nvidia/lib -L/usr/local/Modules/modulefiles/zlib/1.2.12_nvidia/lib -L/usr/local/Modules/modulefiles/pnetcdf/1.12.3_nvidia/lib /usr/local/Modules/modulefiles/pnetcdf/1.12.3_nvidia/lib/libpnetcdf.la /usr/local/Modules/modulefiles/cuda/sdk_13/Linux_x86_64/25.11/comm_libs/13.0/hpcx/hpcx-2.25.1/ompi/lib/libmpi_usempif08.la  /usr/local/Modules/modulefiles/cuda/sdk_13/Linux_x86_64/25.11/comm_libs/13.0/hpcx/hpcx-2.25.1/ompi/lib/libmpi_usempi_ignore_tkr.la  /usr/local/Modules/modulefiles/cuda/sdk_13/Linux_x86_64/25.11/comm_libs/13.0/hpcx/hpcx-2.25.1/ompi/lib/libmpi_mpifh.la -lnvf -lnsnvc  /usr/local/Modules/modulefiles/cuda/sdk_13/Linux_x86_64/25.11/comm_libs/13.0/hpcx/hpcx-2.25.1/ompi/lib/libmpi.la -lrt -lutil /usr/local/Modules/modulefiles/hdf5/1.10.3_nvidia/lib/libhdf5_hl.la /usr/local/Modules/modulefiles/hdf5/1.10.3_nvidia/lib/libhdf5.la -ldl /usr/local/Modules/modulefiles/libxml2/2.16.0_nvidia/lib/libxml2.la -lm /usr/local/Modules/modulefiles/curl/8.9.0_nvidia/lib/libcurl.la -lz' \
+This procedure is important to enable the installation of NETCDF-FORTRAN from NETCDF-C
