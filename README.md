@@ -13,12 +13,13 @@ Source: https://code.metoffice.gov.uk/trac/monc/browser/main/branches/dev/lamber
 \
 \
 Development:
-- build of librairies (zlib, curl, libxml2, pnetcdf, netcdf-C, netcdf-Fortran)\
+- build of librairies (zlib, curl, libxml2, pnetcdf, netcdf-C, netcdf-Fortran)
   - Issues encountered with the use of nv# compilers:
   - Trouble to build libxml2, contact with NVIDIA support: https://forums.developer.nvidia.com/t/libxml2-manual-installation/360152 
   - Trouble with zlib symbols which troubles the HDF5 installation, contact with NVIDIA support: https://forums.developer.nvidia.com/t/zlib-manual-installation-conflict/360230 
   - Trouble with NETCDF libraries, contact with NVIDIA support: https://forums.developer.nvidia.com/t/netcdf-fortran-manual-installation/360255 (solved by myself)
 - compilation of MONC
+  - replacement of isnan function by ieee_is_nan function
  
 
 # Build librairies: 
@@ -161,3 +162,6 @@ make -j 4 \
 sudo make install
 
 # MONC Compilation: 
+
+Modification of some files due tu the use of NVIDIA compiler\
+Replacement of isnan function by ieee_is_nan function using "use ieee_arithmetic"
