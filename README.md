@@ -141,6 +141,7 @@ replace by: \
 dependency_libs=' -L/usr/local/Modules/modulefiles/cuda/sdk_13/Linux_x86_64/25.11/comm_libs/13.0/hpcx/hpcx-2.25.1/ompi/lib -L/usr/local/Modules/modulefiles/curl/8.9.0_nvidia/lib -L/usr/local/Modules/modulefiles/libxml2/2.16.0_nvidia/lib -L/usr/local/Modules/modulefiles/hdf5/1.10.3_nvidia/lib -L/usr/local/Modules/modulefiles/zlib/1.2.12_nvidia/lib -L/usr/local/Modules/modulefiles/pnetcdf/1.12.3_nvidia/lib /usr/local/Modules/modulefiles/pnetcdf/1.12.3_nvidia/lib/libpnetcdf.la /usr/local/Modules/modulefiles/cuda/sdk_13/Linux_x86_64/25.11/comm_libs/13.0/hpcx/hpcx-2.25.1/ompi/lib/libmpi_usempif08.la  /usr/local/Modules/modulefiles/cuda/sdk_13/Linux_x86_64/25.11/comm_libs/13.0/hpcx/hpcx-2.25.1/ompi/lib/libmpi_usempi_ignore_tkr.la  /usr/local/Modules/modulefiles/cuda/sdk_13/Linux_x86_64/25.11/comm_libs/13.0/hpcx/hpcx-2.25.1/ompi/lib/libmpi_mpifh.la -lnvf -lnsnvc  /usr/local/Modules/modulefiles/cuda/sdk_13/Linux_x86_64/25.11/comm_libs/13.0/hpcx/hpcx-2.25.1/ompi/lib/libmpi.la -lrt -lutil /usr/local/Modules/modulefiles/hdf5/1.10.3_nvidia/lib/libhdf5_hl.la /usr/local/Modules/modulefiles/hdf5/1.10.3_nvidia/lib/libhdf5.la -ldl /usr/local/Modules/modulefiles/libxml2/2.16.0_nvidia/lib/libxml2.la -lm /usr/local/Modules/modulefiles/curl/8.9.0_nvidia/lib/libcurl.la -lz' \
 This procedure is important to enable the installation of NETCDF-FORTRAN from NETCDF-C
 
+# MONC Compilation: 
 #################################
 
 NETCDF-FORTRAN
