@@ -141,6 +141,9 @@ This procedure is important to enable the installation of NETCDF-FORTRAN from NE
 
 NETCDF-FORTRAN
 
+Download v4.6.1 at https://downloads.unidata.ucar.edu/netcdf/
+
+Then:\
 module load cuda/sdk_13/modulefiles/nvhpc-hpcx-cuda13/25.11 \
 module load curl/8.9.0_nvidia/curl-8.9.0_nvidia \
 module load zlib/1.2.12_nvidia/zlib_1.2.12_nvidia \
